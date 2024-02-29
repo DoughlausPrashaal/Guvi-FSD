@@ -1,0 +1,20 @@
+[
+{
+    "name" : "prashaal",
+    "id" : 1,
+    "ismember" : true,
+    "pos" : "developer"
+},
+{
+    "name" : "satish",
+    "id" : 2,
+    "ismember" : true,
+    "pos" : "developer"
+},
+{
+    "name" : "bala",
+    "id" : 3,
+    "ismember" : true,
+    "pos" : "developer"
+}
+]
