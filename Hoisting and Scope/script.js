@@ -34,3 +34,12 @@ console.log(obj.demoobj.id)
 // Map Operator
 
 console.log(obj["ismember"])
+
+
+//xmlhttp request
+
+let xml = new XMLHttpRequest()
+console.log(xml)
+
+xml.open("GET" , "https://restcountries.eu/rest/v2/all")
+xml.send()
