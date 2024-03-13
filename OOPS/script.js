@@ -130,8 +130,22 @@ class Student extends Guvi {
 constructor(batch, topic, mentor, time, task, name, course) {
     super(batch, topic, mentor, time, task);
     this.student_name = name;
-    this.student_course = course;
+    this._student_course = course;
 }
+
+// getter method
+get student_course(){
+  return this._student_course
+}
+// setter method
+set student_course(newCourse){
+  if(newCourse.length <=0 || newCourse.length >10){
+    console.log("Error setting course")
+  }else{
+    this._student_course = newCourse
+  }
+}
+
 getStudentInfo() {
     console.log(`
     StudentName : ${this.student_name}
@@ -144,3 +158,7 @@ const prashaal = new Student(57, "OOPS", "Sanjay", "8.10", 60, "Prashaal", "MERN
 console.log(prashaal);
 prashaal.getStudentInfo();
 prashaal.getTodayTopic();
+
+console.log(prashaal.student_course)
+prashaal.student_course = "FSD";
+console.log(prashaal.student_course)
