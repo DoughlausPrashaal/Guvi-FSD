@@ -19,7 +19,7 @@ app.get('/createFile', (req, res) => {
         res.status(500).send('Error creating file');
       } else {
         console.log('File created successfully:', filePath);
-        res.status(200).send('File created successfully',filePath);
+        res.status(200).send('File created successfully');
       }
     });
 });
